@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="guess.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid bg-container ">
+        <div class="row text-center">
+            <div class="col-12  pt-4 pb-4">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-game-img.png" class="guess-image " />
+                <p class="text-center game-description">Find out the right number between 1 to 100 </p>
+            </div>
+        </div>
+        <div class="row guess-bg-container pb-3">
+            <div class="col-12 ">
+                <h1 class="para pt-2 pb-2">Guess the Number
+                    <img class="guess-number-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/guess-number-img.png" />
+                </h1>
+                <input type="text" class="user-input" id="guessNumber" />
+                <div>
+                    <button class="btn btn-info check-guess" onclick="checkGuess()">
+                        Check
+                    </button>
+                    <button id="reStartBtn" class="btn btn-primary">Restart</button>
+                </div>
+                <p class="game-result" id="gameResult"></p>
+                <p>Your Score:<span class="pl-2" id="scoreEle">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+
+</html>
